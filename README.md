@@ -22,6 +22,7 @@ python/     esreg/  reference library (likelihood, fiml, twostep, effects, tests
 stata/      esreg.ado, esreg_lf1.ado, esreg_engine.ado, esreg_mata.ado, _esreg_getest.ado,
             _esreg_data.ado, _esreg_effects_post.ado, esreg_p.ado, esrdiag.ado, esrtest.ado,
             esrcurve.ado, esrmte.ado, _esreg_pwr.ado, esrreport.ado   the command family
+            esreg.dlg            the dialog box (db esreg)
             *_test.do            validation do-files, one per command (expected Python values printed)
             etregress_check.do   esreg against etregress (Section 8.4)
             esreg_wt_test.do     weights, hsize(), the svy prefix
@@ -75,6 +76,7 @@ reference values next to the Stata output, and writes its log to `logs/`.
 | Section 8.4 (validation against etregress) | `stata/etregress_check.do` |
 | Single-sample values quoted in Section 4 | `stata/esrtest_test.do`, `stata/esrdiag_test.do`, `python/export_*.txt` |
 | Weights and svy (Section 8.3) | `stata/esreg_wt_test.do`, `python/export_wt.txt` |
+| Dialog box and the `by:` prefix | `stata/esreg_dlg_test.do` → `logs/esreg_dlg_test.log`, `stata/esreg_dlg_probe.do` |
 
 ## License
 

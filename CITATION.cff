@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this replication package, please cite the paper."
+title: "Replication package for: Endogenous Switching Regression with Heterogeneous Selection on Gains: Assumptions, Tests, and Estimation"
+version: 1.0.0
+date-released: 2026-09-12
+license: MIT
+authors:
+  - family-names: Araar
+    given-names: Abdelkrim
+    affiliation: "Universite Laval and Partnership for Economic Policy (PEP)"
+repository-code: "https://github.com/aabbdd12/esregrepl"
+preferred-citation:
+  type: article
+  title: "Endogenous Switching Regression with Heterogeneous Selection on Gains: Assumptions, Tests, and Estimation"
+  authors:
+    - family-names: Araar
+      given-names: Abdelkrim
+  year: 2026

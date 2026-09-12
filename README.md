@@ -1,13 +1,14 @@
 # Replication package — Endogenous Switching Regression with Heterogeneous Selection on Gains
 
 Araar, A. (2026). *Endogenous Switching Regression with Heterogeneous Selection
-on Gains: Assumptions, Tests, and Estimation.* Working paper, Université Laval
-and PEP.
+on Gains: Assumptions, Tests, and Estimation.* Zenodo.
+<https://doi.org/10.5281/zenodo.22717029>
 
 This package reproduces every table and figure of the paper, in Python and in
 Stata, from the same data. The Stata command itself (`esreg` and its family) is
-distributed separately as an installable package (repository `esreg`); the ado
-files are included here as well so that the package is self-contained.
+distributed separately as an installable package,
+<https://github.com/aabbdd12/esreg>; the ado files and the installable package are
+included here as well so that this repository is self-contained.
 
 ## Layout
 
@@ -28,7 +29,8 @@ stata/      esreg.ado, esreg_lf1.ado, esreg_engine.ado, esreg_mata.ado, _esreg_g
 data/       esr_sim, esr_annex2, esr_skew, esr_nonlin (Araar 2026a,b); esr_kx, esr_suff, esr_dh,
             esr_link, esr_wt (this paper, seeds in the export scripts); union3, drugexp (Stata Press)
 logs/       the Stata logs of every do-file, as run for the paper (StataNow 19.5)
-paper/      esreg.tex, the draft PDF, the figures and the reading sheet of Section 7
+paper/      esreg.tex, the draft PDF (esreg_draft_17.pdf), the figures and the reading sheet
+            of Section 7
 package/    the installable Stata package (same ado files plus the help files, esreg.pkg
             and stata.toc): net install esreg, from("<path to this package folder>")
 run_stata.bat   runs a do-file in batch from this folder (edit the path to Stata)
@@ -58,6 +60,7 @@ run_stata.bat stata\esrmte_test.do       run_stata.bat stata\esrreport_test.do
 run_stata.bat stata\etregress_check.do   run_stata.bat stata\esreg_wt_test.do
 run_stata.bat stata\sec7_union3.do       (Section 7; writes paper\fig_union3_*.pdf)
 run_stata.bat stata\esreg_pkg_test.do   (installs package\ and runs the commands from it)
+run_stata.bat stata\esreg_net_test.do   (installs esreg from GitHub and runs the quick start)
 ```
 
 Each do-file loads the ado files from `stata/` with `run`, prints the Python
